@@ -5,4 +5,12 @@
     3. Uso len() nessa lista para obter a quantidade de palavras.
     4. Imprimo o número diretamente.
 """
-print(len(input("Digite o texto: ").split(" ")))
+texto = input("Digite o texto: ")
+
+palavras = texto.split(" ")
+
+quantidade = len(palavras)
+
+print(quantidade)
+
+# print(len(input("Digite o texto: ").split(" ")))

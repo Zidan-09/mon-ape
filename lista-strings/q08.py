@@ -10,9 +10,15 @@
 """
 text = input("Digite o texto: ")
 
+vogals = ["a", "e", "i", "o", "u"]
+
 final = ""
 
 for i in text:
-    final += i if i.lower() not in ["a", "e", "i", "o", "u"] else ""
+    if i.lower() not in vogals:
+            final += i
+
+    # Condicional inline:
+    # final += i if i.lower() not in ["a", "e", "i", "o", "u"] else ""
 
 print(final)
